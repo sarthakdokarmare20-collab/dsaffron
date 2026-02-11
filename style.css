@@ -573,3 +573,61 @@ html, body {
   }
 
 }
+/* ===== PREMIUM HERO ANIMATIONS ===== */
+
+/* typewriter heading */
+
+.typewriter span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(20px);
+  animation: letterReveal 0.5s forwards;
+}
+
+/* stagger timing */
+.typewriter span:nth-child(1) { animation-delay: 0.1s; }
+.typewriter span:nth-child(2) { animation-delay: 0.2s; }
+.typewriter span:nth-child(3) { animation-delay: 0.3s; }
+.typewriter span:nth-child(4) { animation-delay: 0.4s; }
+.typewriter span:nth-child(5) { animation-delay: 0.5s; }
+.typewriter span:nth-child(6) { animation-delay: 0.6s; }
+.typewriter span:nth-child(7) { animation-delay: 0.7s; }
+.typewriter span:nth-child(8) { animation-delay: 0.8s; }
+.typewriter span:nth-child(9) { animation-delay: 0.9s; }
+
+@keyframes letterReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* buttons cinematic entry */
+
+.hero-buttons .primary {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.hero-buttons .secondary {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
