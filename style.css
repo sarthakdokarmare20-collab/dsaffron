@@ -562,3 +562,14 @@ html, body {
   }
 
 }
+/* ===== REMOVE WEIRD HEADER DOTS ===== */
+
+/* ===== MOBILE HERO TEXT POSITION ===== */
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    bottom: 90px;   /* 🔥 adjust height */
+  }
+
+}
