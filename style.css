@@ -189,8 +189,14 @@ body {
   width: 90px;
   height: auto;
   object-fit: contain;
-  filter: brightness(1.2) contrast(1.1);
+
+  background: transparent;
+  border: none;
+
+  box-shadow: none;        /* ⭐ remove square shadow */
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35)); /* soft premium glow */
 }
+
 
 /* ================= HERO CINEMATIC ================= */
 
@@ -405,10 +411,10 @@ html, body {
 }
 
 /* image mapping */
-.slide1 { background-image: url("front1.webp"); animation-delay: 0s; }
-.slide2 { background-image: url("front2.webp"); animation-delay: 8s; }
-.slide3 { background-image: url("front3.webp"); animation-delay: 16s; }
-.slide4 { background-image: url("frontimage.png"); animation-delay: 24s; }
+.slide1 { background-image: url("frontimage.png"); animation-delay: 0s; }
+.slide2 { background-image: url("front2.png"); animation-delay: 8s; }
+.slide3 { background-image: url("front3.png"); animation-delay: 16s; }
+.slide4 { background-image: url("front4.png"); animation-delay: 24s; }
 
 /* fade + zoom */
 @keyframes heroFade {
